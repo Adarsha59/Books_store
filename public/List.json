@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Hero",
+    "title": "The Brave Protector of the Realm",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Villain",
+    "title": "The Dark Lord of Shadows",
+    "price": 15.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/villain-concept_23-2148514691.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sidekick",
+    "title": "Loyal Companion to the Hero",
+    "price": 5.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/sidekick-illustration_23-2148504751.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mentor",
+    "title": "Wise Sage and Guide",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/mentor-concept_23-2148504765.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Antihero",
+    "title": "Reluctant Savior with a Dark Past",
+    "price": 9.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/antihero-illustration_23-2148504776.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Queen",
+    "title": "Regal Monarch of the Kingdom",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/queen-illustration_23-2148504788.jpg"
+  },
+  {
+    "id": 7,
+    "name": "King",
+    "title": "The Mighty Ruler",
+    "price": 14.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/king-illustration_23-2148504790.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Wizard",
+    "title": "Master of Magical Arts",
+    "price": 12.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/wizard-illustration_23-2148504800.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Knight",
+    "title": "Gallant Warrior of Honor",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/knight-illustration_23-2148504805.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Rogue",
+    "title": "Stealthy Thief with a Heart of Gold",
+    "price": 7.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/rogue-illustration_23-2148504810.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Healer",
+    "title": "Compassionate Caregiver",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/healer-illustration_23-2148504815.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Assassin",
+    "title": "Silent Killer in the Shadows",
+    "price": 8.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assassin-illustration_23-2148504820.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Necromancer",
+    "title": "Dark Sorcerer of the Undead",
+    "price": 9.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/necromancer-illustration_23-2148504825.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Archer",
+    "title": "Expert Marksman with a Bow",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/archer-illustration_23-2148504830.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Druid",
+    "title": "Nature's Guardian",
+    "price": 6.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/druid-illustration_23-2148504835.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Paladin",
+    "title": "Holy Knight of Justice",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/paladin-illustration_23-2148504840.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Bard",
+    "title": "Charming Performer and Storyteller",
+    "price": 5.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/bard-illustration_23-2148504845.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Sorcerer",
+    "title": "Wielder of Arcane Powers",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/sorcerer-illustration_23-2148504850.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Berserker",
+    "title": "Fierce Warrior of the North",
+    "price": 8.49,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/berserker-illustration_23-2148504855.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Cleric",
+    "title": "Devout Healer and Protector",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/cleric-illustration_23-2148504860.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Ranger",
+    "title": "Skilled Tracker and Hunter",
+    "price": 6.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/ranger-illustration_23-2148504865.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Alchemist",
+    "title": "Master of Potions and Elixirs",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/alchemist-illustration_23-2148504870.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Monk",
+    "title": "Serene Martial Artist",
+    "price": 5.49,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/monk-illustration_23-2148504875.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Beastmaster",
+    "title": "Tamer of Wild Creatures",
+    "price": 7.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/beastmaster-illustration_23-2148504880.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Summoner",
+    "title": "Invoker of Powerful Entities",
+    "price": 9.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/summoner-illustration_23-2148504885.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Warrior",
+    "title": "Battle-Hardened Veteran",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/warrior-illustration_23-2148504890.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Spy",
+    "title": "Master of Espionage",
+    "price": 6.49,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/spy-illustration_23-2148504895.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Inventor",
+    "title": "Brilliant Creator of Gadgets",
+    "price": 0,
+    "category": "free",
+    "image": "https://img.freepik.com/free-photo/inventor-illustration_23-2148504900.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Shapeshifter",
+    "title": "Mystic with a Thousand Forms",
+    "price": 8.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/shapeshifter-illustration_23-2148504905.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Hunter",
+    "title": "Expert Tracker and Survivalist",
+    "price": 5.99,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/hunter-illustration_23-2148504910.jpg"
+  }
+]
