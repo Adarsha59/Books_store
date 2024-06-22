@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import Login from "./Login";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   // const [theme, setTheme] = useState(
   //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
@@ -73,7 +74,7 @@ export default function Navbar() {
   );
   const Search = (
     <>
-      <label className="input input-bordered flex items-center gap-2">
+      <label className="input input-bordered  dark:bg-white dark:text-black flex items-center gap-2">
         <input type="text" className="grow" placeholder="Search" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +93,7 @@ export default function Navbar() {
   );
   const Dark = (
     <>
-      <label className="swap swap-rotate">
+      <label className="swap swap-rotate  dark:bg-white dark:text-black">
         {/* this hidden checkbox controls the state */}
         <input
           type="checkbox"
@@ -102,7 +103,7 @@ export default function Navbar() {
         />
         {isDarkMode ? (
           <svg
-            className="swap-off fill-current w-8 h-8"
+            className="swap-on fill-current w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             // onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -111,7 +112,7 @@ export default function Navbar() {
           </svg>
         ) : (
           <svg
-            className="swap-on fill-current w-8 h-8"
+            className="swap-off fill-current w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             // onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -127,7 +128,7 @@ export default function Navbar() {
       <div
         className={`px-4 md:px-8 lg:px-4 dark:bg-white dark:text-black fixed top-0 right-0  left-0  z-10 ${
           sticky
-            ? "sticky-nav bg-base-200 dark:bg-slate-200  dark:text-white duration-150 transition-all ease-in-out"
+            ? "sticky-nav bg-base-200 dark:bg-slate-300 duration-150 transition-all ease-in-out"
             : ""
         }`}
       >
@@ -167,10 +168,20 @@ export default function Navbar() {
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1">{NavItem}</ul>
             </div>
-            <div className="hidden md:block">{Search}</div>
+            <div className="hidden md:block ">{Search}</div>
             <div className="mx-4">{Dark}</div>
-            <div className="mx-4">
-              <a className="btn">Login</a>
+            <div className="mx-4 flex flex-nowrap ">
+              <div className="mx-3">
+                <button
+                  className="btn"
+                  onClick={() =>
+                    document.getElementById("my_modal_5").showModal()
+                  }
+                >
+                  Login
+                  <Login />
+                </button>
+              </div>
             </div>
           </div>
         </div>

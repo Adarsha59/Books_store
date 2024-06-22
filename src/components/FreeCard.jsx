@@ -44,7 +44,7 @@ function FreeCard() {
   };
   return (
     <>
-      <div className="px-4 md:px-16 my-10 ">
+      <div className="px-4 md:px-16 my-10  dark:bg-white dark:text-black">
         <div>
           <h1 className="text-2xl font-bold">Free Offered Books</h1>
           <p>
@@ -55,7 +55,7 @@ function FreeCard() {
           </p>
         </div>
       </div>
-      <div className="px-8 md:px-16 my-10 ">
+      <div className="px-8 md:px-16 my-10  dark:bg-white dark:text-black">
         <div className="slider-container  ">
           <Slider {...settings}>
             {FilterData.map((item) => (

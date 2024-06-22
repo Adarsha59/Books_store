@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import List from "../../public/List.json";
 import Card from "./Card";
-import { Link } from "react-router-dom";
 function Course() {
   return (
     <div className="min-h-screen px-4 md:px-8  dark:bg-white dark:text-black  mt-[10.2rem]  ">
@@ -16,7 +17,7 @@ function Course() {
           pariatur
         </p>
 
-        <Link to="/">
+        <Link to="/signup">
           <button className=" bg-pink-300 px-4 py-4 rounded-md text-[18px] hover:bg-pink-700 duration-150 font-bold  ">
             Back
           </button>
