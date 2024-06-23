@@ -1,13 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 function Login() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
   return (
-    <>
-      <div className="dark:bg-white dark:text-black">
-        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-          <div className="modal-box dark:bg-white dark:text-black">
-            <h3 className="font-bold text-lg mb-4">Login</h3>
+    <div className="dark:bg-white dark:text-black">
+      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box dark:bg-white dark:text-black">
+          <h3 className="font-bold text-lg mb-4">Login</h3>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div>
               <label className="input dark:bg-white dark:text-black input-bordered flex items-center gap-2">
                 <svg
@@ -19,7 +28,13 @@ function Login() {
                   <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
                   <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                 </svg>
-                <input type="text" className="grow" placeholder="Email" />
+                <input
+                  {...register("email", { required: true })}
+                  type="email"
+                  className="grow"
+                  placeholder="Email"
+                />
+                {errors.email && <span>This field is required</span>}
               </label>
               <label className="dark:bg-white dark:text-black input input-bordered flex items-center gap-2">
                 <svg
@@ -30,7 +45,13 @@ function Login() {
                 >
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                 </svg>
-                <input type="text" className="grow" placeholder="Username" />
+                <input
+                  {...register("username", { required: true })}
+                  type="text"
+                  className="grow"
+                  placeholder="Username"
+                />
+                {errors.username && <span>This field is required</span>}
               </label>
               <label className="dark:bg-white dark:text-black input input-bordered flex items-center gap-2">
                 <svg
@@ -45,26 +66,29 @@ function Login() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <input type="password" className="grow" value="password" />
+                <input
+                  type="password"
+                  {...register("password", { required: true })}
+                  className="grow"
+                  placeholder="Password"
+                />
+                {errors.password && <span>This field is required</span>}
               </label>
-
-              {/* <Link to="signup" className="label-text-alt link link-hover">
-                Not registered yet?
-                <span className="text-pink-500 font-bold"> Signup!</span>
-              </Link> */}
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button type="submit" className="btn btn-primary">
+                Login
+              </button>
             </div>
-            <div className="modal-action">
-              <form method="dialog">
-                <button className="btn">Close</button>
-              </form>
-            </div>
+          </form>
+          <div className="modal-action">
+            <form method="dialog">
+              <button className="btn">Close</button>
+            </form>
           </div>
-        </dialog>
-      </div>
-    </>
+        </div>
+      </dialog>
+    </div>
   );
 }
 

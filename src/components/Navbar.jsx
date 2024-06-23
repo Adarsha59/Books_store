@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
 import { Link } from "react-router-dom";
+import Signup from "./Signup";
 export default function Navbar() {
   // const [theme, setTheme] = useState(
   //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
@@ -180,6 +181,17 @@ export default function Navbar() {
                 >
                   Login
                   <Login />
+                </button>
+              </div>
+              <div className="mx-3">
+                <button
+                  className="btn"
+                  onClick={() =>
+                    document.getElementById("my_modal_4").showModal()
+                  }
+                >
+                  Signup
+                  <Signup />
                 </button>
               </div>
             </div>
