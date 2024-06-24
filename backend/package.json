@@ -1,0 +1,26 @@
+{
+  "name": "books_backend",
+  "version": "1.0.0",
+  "description": "backend for the bookie website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adarsha59/Books_store.git"
+  },
+  "author": "adarsha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adarsha59/Books_store/issues"
+  },
+  "homepage": "https://github.com/Adarsha59/Books_store#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.4.3"
+  }
+}
