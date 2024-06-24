@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import List from "../../public/List.json";
+import axios from "axios";
+// import List from "../../public/List.json";
 import Card from "./Card";
 function Course() {
+  const [List, setList] = useState([]);
+  useEffect(() => {
+    const getBooks = async () => {
+      try {
+        const response = await axios.get("http://localhost:3001/books");
+        console.log("hello this is hai ta", response);
+        setList(response.data);
+      } catch (error) {
+        console.log("Error fetching books:", error);
+      }
+    };
+    getBooks();
+  }, []);
+
   return (
     <div className="min-h-screen px-4 md:px-8  dark:bg-white dark:text-black  mt-[10.2rem]  ">
       <div className=" space-y-5 items-center justify-center text-center">

@@ -3,13 +3,13 @@ import React from "react";
 function Contact() {
   return (
     <div className="min-h-screen px-4 md:px-8  dark:bg-white dark:text-black  mt-[10.2rem]  ">
-      <div class="font-[sans-serif] max-w-6xl mx-auto relative dark:bg-white dark:text-black rounded-lg py-6">
-        <div class="grid lg:grid-cols-3 items-center ">
-          <div class="grid sm:grid-cols-2 gap-4 z-20 relative lg:left-16 max-lg:px-4">
-            <div class="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
+      <div className="font-[sans-serif] max-w-6xl mx-auto relative dark:bg-white dark:text-black rounded-lg py-6">
+        <div className="grid lg:grid-cols-3 items-center ">
+          <div className="grid sm:grid-cols-2 gap-4 z-20 relative lg:left-16 max-lg:px-4">
+            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-7 fill-blue-600"
+                className="w-7 fill-blue-600"
                 viewBox="0 0 512 512"
               >
                 <path
@@ -21,15 +21,15 @@ function Contact() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <h4 class="text-gray-800 text-base font-bold mt-4">
+              <h4 className="text-gray-800 text-base font-bold mt-4">
                 Visit office
               </h4>
-              <p class="text-sm text-gray-600 mt-2"> Ktm city</p>
+              <p className="text-sm text-gray-600 mt-2"> Ktm city</p>
             </div>
-            <div class="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
+            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-7 fill-blue-600"
+                className="w-7 fill-blue-600"
                 viewBox="0 0 473.806 473.806"
               >
                 <path
@@ -37,13 +37,15 @@ function Contact() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <h4 class="text-gray-800 text-base font-bold mt-4">Call us</h4>
-              <p class="text-sm text-gray-600 mt-2">97758 996 888</p>
+              <h4 className="text-gray-800 text-base font-bold mt-4">
+                Call us
+              </h4>
+              <p className="text-sm text-gray-600 mt-2">97758 996 888</p>
             </div>
-            <div class="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
+            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-7 fill-blue-600"
+                className="w-7 fill-blue-600"
                 viewBox="0 0 32 32"
               >
                 <path
@@ -55,13 +57,15 @@ function Contact() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <h4 class="text-gray-800 text-base font-bold mt-4">Chat to us</h4>
-              <p class="text-sm text-gray-600 mt-2">info@example.com</p>
+              <h4 className="text-gray-800 text-base font-bold mt-4">
+                Chat to us
+              </h4>
+              <p className="text-sm text-gray-600 mt-2">info@example.com</p>
             </div>
-            <div class="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
+            <div className="flex flex-col items-center justify-center rounded-lg w-full h-44 p-4 text-center dark:bg-white dark:text-black shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-7 fill-blue-600"
+                className="w-7 fill-blue-600"
                 viewBox="0 0 100 100"
               >
                 <path
@@ -69,47 +73,47 @@ function Contact() {
                   data-original="#000000"
                 ></path>
               </svg>
-              <h4 class="text-gray-800 text-base font-bold mt-4">Fax</h4>
-              <p class="text-sm text-gray-600 mt-2">012425</p>
+              <h4 className="text-gray-800 text-base font-bold mt-4">Fax</h4>
+              <p className="text-sm text-gray-600 mt-2">012425</p>
             </div>
           </div>
 
-          <div class="lg:col-span-2  dark:bg-white dark:text-black rounded-lg sm:p-10 p-4 z-10 max-lg:-order-1 max-lg:mb-8">
-            <h2 class="text-3xl  dark:bg-white dark:text-black text-center font-bold mb-6">
+          <div className="lg:col-span-2  dark:bg-white dark:text-black rounded-lg sm:p-10 p-4 z-10 max-lg:-order-1 max-lg:mb-8">
+            <h2 className="text-3xl  dark:bg-white dark:text-black text-center font-bold mb-6">
               Contact us
             </h2>
             <form>
-              <div class="max-w-md mx-auto space-y-3">
+              <div className="max-w-md mx-auto space-y-3">
                 <input
                   type="text"
                   placeholder="Name"
-                  class="w-full dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
+                  className="w-full dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  class="w-full  dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
+                  className="w-full  dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
                 />
                 <input
                   type="email"
                   placeholder="Phone No."
-                  class="w-full  dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
+                  className="w-full  dark:bg-white dark:text-black rounded-lg py-3 px-6 text-sm outline-none"
                 />
                 <textarea
                   placeholder="Message"
                   rows="6"
-                  class="w-full  dark:bg-white dark:text-black rounded-lg px-6 text-sm pt-3 outline-none"
+                  className="w-full  dark:bg-white dark:text-black rounded-lg px-6 text-sm pt-3 outline-none"
                 ></textarea>
                 <button
                   type="button"
-                  class="text-gray-800 w-full relative bg-yellow-400 hover:bg-yellow-500 font-semibold rounded-lg text-sm px-6 py-3 !mt-6"
+                  className="text-gray-800 w-full relative bg-yellow-400 hover:bg-yellow-500 font-semibold rounded-lg text-sm px-6 py-3 !mt-6"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16px"
                     height="16px"
                     fill="currentColor"
-                    class="mr-2 inline"
+                    className="mr-2 inline"
                     viewBox="0 0 548.244 548.244"
                   >
                     <path
