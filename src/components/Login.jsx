@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
+import toast from "react-hot-toast";
 function Login() {
   const {
     register,
@@ -9,7 +10,26 @@ function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const UserInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    // Make API call to save user info
+    await axios
+      .post("http://localhost:3001/user/login", UserInfo)
+      .then((response) => {
+        if (response.data) {
+          toast.success("Login successfully!");
+        }
+        localStorage.setItem("data_save", JSON.stringify(response.data.user));
+        window.location.reload();
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("This is an error!");
+      });
+  };
 
   return (
     <div className="dark:bg-white dark:text-black">
@@ -36,23 +56,7 @@ function Login() {
                 />
                 {errors.email && <span>This field is required</span>}
               </label>
-              <label className="dark:bg-white dark:text-black input input-bordered flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  className="w-4 h-4 opacity-70"
-                >
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                </svg>
-                <input
-                  {...register("username", { required: true })}
-                  type="text"
-                  className="grow"
-                  placeholder="Username"
-                />
-                {errors.username && <span>This field is required</span>}
-              </label>
+
               <label className="dark:bg-white dark:text-black input input-bordered flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

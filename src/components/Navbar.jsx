@@ -2,22 +2,11 @@ import React, { useEffect, useState } from "react";
 import Login from "./Login";
 import { Link } from "react-router-dom";
 import Signup from "./Signup";
+import { useAuth } from "../context/Auth";
+import Logout from "./Logout";
 export default function Navbar() {
-  // const [theme, setTheme] = useState(
-  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  // );
-  // const element = document.documentElement;
-  // useEffect(() => {
-  //   if (theme === "light") {
-  //     element.classList.add("dark");
-  //     localStorage.setItem("theme", "light");
-  //     document.body.classList.add("dark");
-  //   } else {
-  //     element.classList.remove("dark");
-  //     localStorage.setItem("theme", "light");
-  //     document.body.classList.remove("dark");
-  //   }
-  // }, [theme]);
+  const [isAuthenticated, setIsAuthenticated] = useAuth();
+  console.log("isAuthenticated navbar ko ", isAuthenticated);
 
   const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
@@ -173,15 +162,19 @@ export default function Navbar() {
             <div className="mx-4">{Dark}</div>
             <div className="mx-4 flex flex-nowrap ">
               <div className="mx-3">
-                <button
-                  className="btn"
-                  onClick={() =>
-                    document.getElementById("my_modal_5").showModal()
-                  }
-                >
-                  Login
-                  <Login />
-                </button>
+                {!isAuthenticated ? (
+                  <button
+                    className="btn"
+                    onClick={() =>
+                      document.getElementById("my_modal_5").showModal()
+                    }
+                  >
+                    Login
+                    <Login />
+                  </button>
+                ) : (
+                  <Logout />
+                )}
               </div>
               <div className="mx-3">
                 <button
